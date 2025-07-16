@@ -7,6 +7,7 @@
     "build:dev": "turbo build --filter=!./apps/demo --filter=!./apps/embed --filter=!./apps/embed-demo-blog --filter=!./docs",
     "build:indexer": "turbo build --filter=./apps/indexer...",
     "dev": "turbo dev --filter=./apps/demo... --filter=./apps/indexer --filter=./packages/protocol --filter=./packages/test-protocol",
+    "dev:broadcast-mini-app": "turbo dev --filter=./apps/broadcast-app-indexer... --filter=./apps/indexer... --filter=./packages/protocol",
     "dev:indexer": "turbo dev --filter=./apps/indexer... --filter=./packages/protocol",
     "dev:nft-base-uri-server": "turbo dev --filter=./apps/nft-base-uri-server... --filter=./packages/protocol",
     "dev:embed": "turbo dev --filter=./apps/embed... --filter=./apps/embed-demo-blog --filter=./apps/indexer --filter=./packages/protocol",
@@ -40,7 +41,7 @@
       "@walletconnect/core": "~2.21.1",
       "@walletconnect/sign-client": "~2.21.1",
       "@walletconnect/universal-provider": "~2.21.1",
-      "zod": "~3.24.2",
+      "zod": "~3.25.27",
       "viem": "~2.29.2",
       "use-sync-external-store": "^1.5.0"
     },
